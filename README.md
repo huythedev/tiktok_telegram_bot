@@ -51,7 +51,10 @@ A Telegram bot designed to download TikTok videos without watermarks, utilizing 
 
 4.  **(Optional) Obtain Local Telegram Bot API Server:**
     *   The `prebuilt` directory contains a **Linux x86_64** binary for the Telegram Bot API server.
-    *   If you are using a different operating system (like Windows or macOS) or architecture, you will need to build or download the appropriate binary yourself. Follow the official instructions at [https://tdlib.github.io/telegram-bot-api/build.html](https://tdlib.github.io/telegram-bot-api/build.html).
+    *   If you are using a different operating system (like Windows or macOS) or architecture, you will need to build or download the appropriate binary yourself. 
+        *   You can follow the official instructions at [https://tdlib.github.io/telegram-bot-api/build.html](https://tdlib.github.io/telegram-bot-api/build.html).
+        *   Alternatively, you can find prebuilt binaries for various platforms here:
+            * **Windows:** [std-microblock/tg-botapi-build](https://github.com/std-microblock/tg-botapi-build/releases/latest).
     *   Place the downloaded/built executable in the `prebuilt` directory (or update the `API_BINARY` path in `.env`).
     *   Ensure the binary is executable (`chmod +x prebuilt/telegram-bot-api` on Linux/macOS).
 
