@@ -54,7 +54,10 @@ A Telegram bot designed to download TikTok videos without watermarks, utilizing 
 
     *   **Linux (x86_64):** Download the latest prebuilt binary from [huythedev/telegram-bot-api-prebuilt_for-linux](https://github.com/huythedev/telegram-bot-api-prebuilt_for-linux/releases/latest).
     *   **Windows:** Download the latest prebuilt binary from [std-microblock/tg-botapi-build](https://github.com/std-microblock/tg-botapi-build/releases/latest).
-    *   **macOS / Other Architectures:** You will need to build the binary yourself. Follow the official build instructions: [https://tdlib.github.io/telegram-bot-api/build.html](https://tdlib.github.io/telegram-bot-api/build.html).
+    *   **macOS:** Download the latest prebuilt binary from [huythedev/telegram-bot-api-prebuilt_for-macos](https://github.com/huythedev/telegram-bot-api-prebuilt_for-macos/releases/latest).
+    *   **Other Architectures or Untrusted Builds:** You will need to build the binary yourself. Follow the official build instructions: [https://tdlib.github.io/telegram-bot-api/build.html](https://tdlib.github.io/telegram-bot-api/build.html).
+
+    **Important:** After downloading *any* prebuilt binary (from the links above or if you build it yourself), ensure it's placed in the correct location. By default, the `start.py` script looks for `prebuilt/telegram-bot-api`. If you place it elsewhere or name it differently, you **must** update the `API_BINARY` variable in your `.env` file accordingly. Also, remember to make the downloaded binary executable (e.g., `chmod +x prebuilt/telegram-bot-api` or `chmod +x path/to/your/binary`).
 
 5.  **Run the bot:**
 
@@ -91,3 +94,7 @@ You can also simply send a TikTok video link directly to the bot, and it will at
 
 *   This bot relies on the third-party TikWM API (`https://www.tikwm.com`). Its functionality depends on the availability and terms of service of this API.
 *   Using a local Telegram Bot API server significantly increases the maximum file size the bot can send (from 50MB to 2GB).
+
+## Contact
+
+For quick support or questions, you can reach out on Discord: https://discord.com/users/929735117117730828
