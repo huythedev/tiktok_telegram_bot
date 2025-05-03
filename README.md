@@ -57,7 +57,9 @@ A Telegram bot designed to download TikTok videos without watermarks, utilizing 
     *   **macOS:** Download the latest prebuilt binary from [huythedev/telegram-bot-api-prebuilt_for-macos](https://github.com/huythedev/telegram-bot-api-prebuilt_for-macos/releases/latest).
     *   **Other Architectures or Untrusted Builds:** You will need to build the binary yourself. Follow the official build instructions: [https://tdlib.github.io/telegram-bot-api/build.html](https://tdlib.github.io/telegram-bot-api/build.html).
 
-    **Important:** After downloading *any* prebuilt binary (from the links above or if you build it yourself), ensure it's placed in the correct location. By default, the `start.py` script looks for `prebuilt/telegram-bot-api`. If you place it elsewhere or name it differently, you **must** update the `API_BINARY` variable in your `.env` file accordingly. Also, remember to make the downloaded binary executable (e.g., `chmod +x prebuilt/telegram-bot-api` or `chmod +x path/to/your/binary`).
+    **Important:** After downloading *any* prebuilt binary (from the links above or if you build it yourself), ensure it's placed in the correct location. By default, the `start.py` script looks for `prebuilt/telegram-bot-api`. If you place it elsewhere or name it differently, you **must** update the `API_BINARY` variable in your `.env` file accordingly.
+    *   **On all systems:** Remember to make the downloaded binary executable (e.g., `chmod +x prebuilt/telegram-bot-api` or `chmod +x path/to/your/binary`).
+    *   **macOS users:** You might need to remove the quarantine attribute first. Run `xattr -cr path/to/your/binary` (replace `path/to/your/binary` with the actual path, e.g., `xattr -cr prebuilt/telegram-bot-api`) before running `chmod +x`.
 
 5.  **Run the bot:**
 
